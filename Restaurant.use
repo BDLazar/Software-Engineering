@@ -1,0 +1,59 @@
+model Restaurant
+
+--classes
+
+class Restaurant
+attributes
+	name : String
+	
+operations
+	getOrder()
+end
+	
+class Customer
+attributes 
+	creditLimit : Integer
+	name : String
+end
+
+class OrderLine
+attributes
+	quantity : Integer
+	
+operations
+	getCost()
+end
+
+class Order
+attributes
+	cost : Integer
+	
+operations
+	addItem ( item : OrderLine)
+end
+
+class Product
+attributes
+	cost : Integer
+	name : String
+end
+
+class Menu
+end
+
+--associations
+		
+association HasOrdered between
+	Customer[1]
+	Order[0..*] role orders
+end
+
+association Contains between
+	Order[1] role order
+	OrderLine[*] role items
+end
+
+association HasProduct between
+	Product[1] role productItem
+	OrderLine[0..*] role orderItem
+end

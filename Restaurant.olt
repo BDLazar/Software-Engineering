@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram_Layout version="4">
+  <diagramOptions>
+    <autolayout>false</autolayout>
+    <antialiasing>true</antialiasing>
+    <showassocnames>true</showassocnames>
+    <showattributes>true</showattributes>
+    <showmultiplicities>false</showmultiplicities>
+    <showoperations>false</showoperations>
+    <showrolenames>false</showrolenames>
+    <showgrid>false</showgrid>
+  </diagramOptions>
+  <node type="Object">
+    <name>p2</name>
+    <x_coord>74.67250880054836</x_coord>
+    <y_coord>246.4366979771571</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Object">
+    <name>p1</name>
+    <x_coord>76.70240147576372</x_coord>
+    <y_coord>175.421038307185</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Object">
+    <name>o</name>
+    <x_coord>326.85222585139985</x_coord>
+    <y_coord>105.54376627344058</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Object">
+    <name>John</name>
+    <x_coord>78.62647269484441</x_coord>
+    <y_coord>95.93180445023746</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Object">
+    <name>i2</name>
+    <x_coord>330.92363073758935</x_coord>
+    <y_coord>225.85898238925955</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Object">
+    <name>i1</name>
+    <x_coord>329.8306023299008</x_coord>
+    <y_coord>174.76029843066198</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <edge type="BinaryEdge">
+    <source>John</source>
+    <target>o</target>
+    <name>HasOrdered</name>
+    <edgeproperty type="associationName" userDefined="false">
+      <name>HasOrdered</name>
+      <x_coord>209.5</x_coord>
+      <y_coord>104.51318359375</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="rolename" userDefined="false">
+      <name>orders</name>
+      <x_coord>281.28125</x_coord>
+      <y_coord>91.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="multiplicity" userDefined="false">
+      <name>*</name>
+      <x_coord>324.0</x_coord>
+      <y_coord>90.5</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="rolename" userDefined="false">
+      <name>customer</name>
+      <x_coord>158.0</x_coord>
+      <y_coord>159.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="multiplicity" userDefined="false">
+      <name>1</name>
+      <x_coord>143.109375</x_coord>
+      <y_coord>159.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>156.0</x_coord>
+      <y_coord>118.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>1</name>
+      <x_coord>322.0</x_coord>
+      <y_coord>119.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>2</specialid>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+</diagram_Layout>

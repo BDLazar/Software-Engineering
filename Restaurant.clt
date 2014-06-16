@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram_Layout version="4">
+  <diagramOptions>
+    <autolayout>false</autolayout>
+    <antialiasing>true</antialiasing>
+    <showassocnames>true</showassocnames>
+    <showattributes>true</showattributes>
+    <showmultiplicities>true</showmultiplicities>
+    <showoperations>true</showoperations>
+    <showrolenames>true</showrolenames>
+    <showgrid>false</showgrid>
+  </diagramOptions>
+  <node type="Class">
+    <name>Menu</name>
+    <x_coord>8.0</x_coord>
+    <y_coord>127.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Class">
+    <name>Customer</name>
+    <x_coord>335.0</x_coord>
+    <y_coord>12.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Class">
+    <name>Restaurant</name>
+    <x_coord>88.0</x_coord>
+    <y_coord>13.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Class">
+    <name>OrderItem</name>
+    <x_coord>370.0</x_coord>
+    <y_coord>269.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Class">
+    <name>Product</name>
+    <x_coord>77.0</x_coord>
+    <y_coord>254.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Class">
+    <name>Order</name>
+    <x_coord>435.0</x_coord>
+    <y_coord>119.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <edge type="BinaryEdge">
+    <source>Product</source>
+    <target>Menu</target>
+    <name>Select</name>
+    <edgeproperty type="associationName" userDefined="true">
+      <name>Select</name>
+      <x_coord>85.265625</x_coord>
+      <y_coord>203.34375</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="rolename" userDefined="true">
+      <name>menu</name>
+      <x_coord>28.0</x_coord>
+      <y_coord>172.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="multiplicity" userDefined="true">
+      <name>1</name>
+      <x_coord>71.109375</x_coord>
+      <y_coord>172.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="rolename" userDefined="true">
+      <name>contents</name>
+      <x_coord>37.359375</x_coord>
+      <y_coord>235.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="multiplicity" userDefined="true">
+      <name>*</name>
+      <x_coord>101.0</x_coord>
+      <y_coord>240.5</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>91.0</x_coord>
+      <y_coord>250.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>1</name>
+      <x_coord>57.0</x_coord>
+      <y_coord>165.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>2</specialid>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>Product</source>
+    <target>OrderItem</target>
+    <name>HasProduct</name>
+    <edgeproperty type="associationName" userDefined="true">
+      <name>HasProduct</name>
+      <x_coord>228.453125</x_coord>
+      <y_coord>315.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="rolename" userDefined="true">
+      <name>orderItem</name>
+      <x_coord>310.90625</x_coord>
+      <y_coord>274.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="multiplicity" userDefined="true">
+      <name>*</name>
+      <x_coord>350.0</x_coord>
+      <y_coord>303.5</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="rolename" userDefined="true">
+      <name>productItem</name>
+      <x_coord>156.0</x_coord>
+      <y_coord>275.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="multiplicity" userDefined="true">
+      <name>1</name>
+      <x_coord>157.109375</x_coord>
+      <y_coord>303.5</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>146.0</x_coord>
+      <y_coord>293.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>1</name>
+      <x_coord>366.0</x_coord>
+      <y_coord>293.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>2</specialid>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>Menu</source>
+    <target>Order</target>
+    <name>Construct</name>
+    <edgeproperty type="associationName" userDefined="false">
+      <name>Construct</name>
+      <x_coord>238.7890625</x_coord>
+      <y_coord>130.84375</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="rolename" userDefined="true">
+      <name>orders</name>
+      <x_coord>393.28125</x_coord>
+      <y_coord>150.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="multiplicity" userDefined="true">
+      <name>*</name>
+      <x_coord>417.0</x_coord>
+      <y_coord>132.5</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="rolename" userDefined="true">
+      <name>chosenMenu</name>
+      <x_coord>105.0</x_coord>
+      <y_coord>148.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="multiplicity" userDefined="true">
+      <name>1</name>
+      <x_coord>107.109375</x_coord>
+      <y_coord>131.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>93.0</x_coord>
+      <y_coord>143.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>1</name>
+      <x_coord>431.0</x_coord>
+      <y_coord>143.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>2</specialid>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>Restaurant</source>
+    <target>Customer</target>
+    <name>Has</name>
+    <edgeproperty type="associationName" userDefined="true">
+      <name>Has</name>
+      <x_coord>235.3984375</x_coord>
+      <y_coord>52.5</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="rolename" userDefined="true">
+      <name>customer</name>
+      <x_coord>280.625</x_coord>
+      <y_coord>21.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="multiplicity" userDefined="true">
+      <name>*</name>
+      <x_coord>321.0</x_coord>
+      <y_coord>48.5</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="rolename" userDefined="true">
+      <name>restaurant</name>
+      <x_coord>163.0</x_coord>
+      <y_coord>21.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="multiplicity" userDefined="true">
+      <name>1</name>
+      <x_coord>165.109375</x_coord>
+      <y_coord>49.5</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>157.0</x_coord>
+      <y_coord>37.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>1</name>
+      <x_coord>331.0</x_coord>
+      <y_coord>36.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>2</specialid>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>Order</source>
+    <target>OrderItem</target>
+    <name>Contains</name>
+    <edgeproperty type="associationName" userDefined="true">
+      <name>Contains</name>
+      <x_coord>475.734375</x_coord>
+      <y_coord>220.34375</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="rolename" userDefined="true">
+      <name>items</name>
+      <x_coord>397.0</x_coord>
+      <y_coord>253.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="multiplicity" userDefined="true">
+      <name>*</name>
+      <x_coord>446.453125</x_coord>
+      <y_coord>256.5</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="rolename" userDefined="true">
+      <name>order</name>
+      <x_coord>432.546875</x_coord>
+      <y_coord>181.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="multiplicity" userDefined="true">
+      <name>1</name>
+      <x_coord>484.0</x_coord>
+      <y_coord>182.5</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>479.0</x_coord>
+      <y_coord>172.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>1</name>
+      <x_coord>427.0</x_coord>
+      <y_coord>265.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>2</specialid>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>Customer</source>
+    <target>Order</target>
+    <name>HasOrdered</name>
+    <edgeproperty type="associationName" userDefined="true">
+      <name>HasOrdered</name>
+      <x_coord>443.2734375</x_coord>
+      <y_coord>73.84375</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="rolename" userDefined="true">
+      <name>orders</name>
+      <x_coord>419.28125</x_coord>
+      <y_coord>102.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="multiplicity" userDefined="true">
+      <name>*</name>
+      <x_coord>470.0</x_coord>
+      <y_coord>108.5</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="rolename" userDefined="true">
+      <name>customer</name>
+      <x_coord>359.0</x_coord>
+      <y_coord>69.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="multiplicity" userDefined="true">
+      <name>1</name>
+      <x_coord>431.109375</x_coord>
+      <y_coord>69.5</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>411.0</x_coord>
+      <y_coord>65.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>1</name>
+      <x_coord>465.0</x_coord>
+      <y_coord>115.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>2</specialid>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>Menu</source>
+    <target>Restaurant</target>
+    <name>Benefits</name>
+    <edgeproperty type="associationName" userDefined="true">
+      <name>Benefits</name>
+      <x_coord>16.3671875</x_coord>
+      <y_coord>77.359375</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="rolename" userDefined="true">
+      <name>restaurant</name>
+      <x_coord>101.75</x_coord>
+      <y_coord>74.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="multiplicity" userDefined="true">
+      <name>*</name>
+      <x_coord>83.0</x_coord>
+      <y_coord>74.5</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="rolename" userDefined="true">
+      <name>menu</name>
+      <x_coord>74.0</x_coord>
+      <y_coord>111.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="multiplicity" userDefined="true">
+      <name>1</name>
+      <x_coord>57.109375</x_coord>
+      <y_coord>110.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>62.0</x_coord>
+      <y_coord>123.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>1</name>
+      <x_coord>101.0</x_coord>
+      <y_coord>66.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>2</specialid>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+</diagram_Layout>
